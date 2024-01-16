@@ -1,0 +1,34 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-[#EDEBF8]">
+        <nav class="bg-violet-100 mr-5 ml-5">
+            <div class=" container mx-auto flex justify-between items-center">
+                <div class="flex">
+                    <img src="{% static 'ed.jpg' %}" alt="">
+                    <a href="#" class="text-violet-900 text-4xl font-bold ">Appux</a>
+                </div>
+                <div class=" hidden lg:flex lg:space-x-4">
+                    <a href="" class="">Home</a>
+                    <a href="" class="">Case Studies</a>
+                    <a href="" class="">Poltfolios</a>
+                    <a href="" class="">Blog</a>
+                    <a href="" class="">Resource</a>
+                    <a href="" class="bg-[#5D48E1] shadow-pink-300">Here Us</a>
+                    
+                </div>
+                <svg class="lg:hidden w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h14M1 6h14M1 11h7"/>
+                  </svg>
+            </div> 
+
+        </nav>
+    </div>
+</body>
+</html>
