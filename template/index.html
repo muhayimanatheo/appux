@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="bg-[#EDEBF8]">
-        <nav class="bg-violet-100 mr-5 ml-5">
+        <nav class="bg-violet-100 mr-8 ml-8">
             <div class=" container mx-auto flex justify-between items-center">
                 <div class="flex">
                     <img src="{% static 'ed.jpg' %}" alt="">
@@ -30,88 +30,87 @@
 
         </nav>
         <!-- paragraphy -->
-        <div class="grid grid-cols-2 divide-x   space-x-8 py-5">
-            <div class=" text-4xl font-bold py-10">
-                <h1>All you wanted about</h1>
-                <h1>working with designers and</h1>
-                <h1>creating delightful product</h1>
-                <h1>experience</h1>
+        <div class="grid grid-cols-2 divide-x   space-x-8 py-4 mr-8 ml-8">
+            <div class=" text-4xl font-bold py-7">
+                <h4>All you wanted about</h4>
+                <h4>working with designers and</h4>
+                <h4>creating delightful product</h4>
+                <h4>experience</h4>
             </div> 
             <div class="w-1/2">
-                <img src="cup.PNG" alt="" srcset="" class="w-full">
+                <img src="{% static 'cup.png' %}" alt="" srcset="" class="w-full">
             </div> 
         </div>
         <!-- under paragraphy -->
-        <div class=" bg-white rounded-3xl grid grid-cols-1">
+        <div class=" bg-white rounded-3xl grid grid-cols-1 mr-8 ml-8">
             <div class="flex flex-wrap">
-                <div class="w-1/2">
-                    <img src="w1.PNG" alt="" srcset="" class="w-full rounded-3xl">
+                <div class="w-full lg:w-1/2">
+                    <img src="{% static 'w1.PNG' %}" alt="" srcset="" class="w-full rounded-3xl">
                 </div>
-                <div class="w-1/3 mx-10">
-                    <h1 class="xl font-bold py-7"><span class="text-blue-800">UI DESIGN</span></h1>
+                <div class="w-1/3 mx-8">
+                    <h1 class="xl font-bold py-5"><span class="text-blue-800">UI DESIGN</span></h1>
                     <h1 class="text-2xl font-bold">Card UI Examples And Best</h1>
                     <h1 class="text-2xl font-bold">Practices For Product Owners</h1>
-                    <h1 class="py-3 ">now in 2022, more than 2.7 billion mobile app users in the world
+                    <p class="py-3 ">now in 2022, more than 2.7 billion mobile app users in the world
                         prefer Android apps. we follow the google design principles and
                         the design thinking process to create seamless user experiences
                         and aesthetic interfaces for mobile apps for the android platform.
-                    </h1>
-                    <h1 class="py-3 ">
+                    </p>
+                    <p class="py-3 ">
                         we make android apps more relevant to users that users love to
                         use and bring your business experience to the next level.
-                    </h1>
+                    </p>
 
                 </div>
 
             </div>
-            <!-- responsive image and text -->
+            <!-- responsive navigation -->
         </div>
-        <h1 class="py-10"></h1>
-        <nav class=" py-4 ">
-            <div class="flex flex-wrap mx-auto   justify-between ">
+        <nav class=" py-4 mr-8 ml-8">
+            <div class="flex flex-wrap mx-auto   justify-between">
                 <div class="flex flex-wrap space-x-5  ">
                     <div class="divide-x-2 divide-gray-00  space-x-5">
-                        <a href="#" class=" text-3xl font-bold ">All Post</a>
-                        <a href="#" class=" text-sm text-purple-900 font-semibold underline underline-offset-8 px-5">design process</a>
+                        <p href="#" class=" text-3xl font-bold ">All Post</p>
                     </div>
-                    <div class="space-x-5 py-3">
-                         <a href="#" class=" text-sm font-semibold ">industry</a>
-                         <a href="#" class=" text-sm font-semibold ">busines</a>
-                        <a href="#" class=" text-sm font-semibold">technology</a>
+                    <div class="flex flex-col md:flex-row items-start py-3">
+                        <a href="#" class=" text-sm text-purple-900 font-semibold underline underline-offset-8 mx-5">design process</a>
+                         <a href="#" class=" text-sm font-semibold mx-5">industry</a>
+                         <a href="#" class=" text-sm font-semibold mx-5">busines</a>
+                        <a href="#" class=" text-sm font-semibold mx-5">technology</a>
                     </div>
                 </div>
 
-                <div class="float-left text-sm">
-                    <input type="text" name="" id="" placeholder="search what you want" 
-                        class="border border-white w-60 h-8 rounded mb-2" >
-                        
+                <div class="relative float-left text-sm">
+                    <input type="text" name="" id="" placeholder="search what you want" class="border border-white w-60 h-8 rounded mb-2 ">
+                    <button type="submit" class="absolute right-3"><svg class="w-4 h-9 text-gray-800 dark:text-white opacity-20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                      </svg></button> 
                 </div>
             </div>
         </nav>
-    </div>
-    <p class="py-6"></p>
-
-    <div class="grid grid-cols-3 divide-x space-x-5 mx-20 ">
+    <!-- Responsive images and text -->
+    <div class="grid grid-cols-3 divide-x space-x-5 mx-20 mr-8 ml-8 ">
         <div>
-            <img src="p1.PNG" alt="" srcset="" class="w-full rounded-t-3xl ">
+            <img src="{% static 'p1.PNG' %}" alt="" srcset="" class="w-full rounded-t-3xl ">
             <h1 class="xl font-bold py-4"><span class="text-blue-800">UI DESIGN</span></h1>
             <h1 class="text-xl font-bold">Compelling Design takes More</h1>
             <h1 class="text-xl font-bold">than"Making it like Stripe"</h1>
 
         </div>
         <div>
-            <img src="p2.PNG" alt="" srcset="" class="w-full rounded-t-3xl">
+            <img src="{% static 'p2.PNG' %}" alt="" srcset="" class="w-full rounded-t-3xl">
             <h1 class="xl font-bold py-4"><span class="text-blue-800">DESIGN PROCESS</span></h1>
             <h1 class="text-xl font-bold">What Is Design Thinking and</h1>
             <h1 class="text-xl font-bold">How it Hacks Way to</h1>
         </div>
         <div>
-            <img src="p3.PNG" alt="" srcset="" class="w-full rounded-t-3xl">
+            <img src="{% static 'p3.PNG' %}" alt="" srcset="" class="w-full rounded-t-3xl">
             <h1 class="xl font-bold py-4"><span class="text-blue-800">UI DESIGN</span></h1>
             <h1 class="text-xl font-bold">HealthCare UX: How Design Can</h1>
             <h1 class="text-xl font-bold">Solve Biggest Challenges for</h1>
         </div>
     </div>
-    </div>
+</div>
+ </div>
 </body>
 </html>
